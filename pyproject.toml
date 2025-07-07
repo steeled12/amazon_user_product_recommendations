@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "amazon-sentiment-cf"
+version = "1.0.0"
+authors = ["Andrea Fazio"]
+description = "Amazon Reviews Sentiment Analysis & Collaborative Filtering with PySpark"
+packages = [{include = "pipeline"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+# Core dependencies only
+pyspark = ">=3.5.0"
+datasets = ">=2.14.0" 
+pandas = ">=2.0.0"
+numpy = ">=1.24.0"
+matplotlib = ">=3.7.0"
+seaborn = ">=0.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run-pipeline = "run_pipeline:main"

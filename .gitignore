@@ -1,0 +1,4 @@
+/output
+/temp_metadata.parquet
+/temp_reviews.parquet
+/__pycache__
